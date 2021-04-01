@@ -2,9 +2,9 @@ package assessment2;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
 public class VehicleApp {
 
+        //static methods
     public static void printVehicleNamesAndPrices(Vehicle[] vehicles){
     for(Vehicle vehicle: vehicles){
         System.out.println(vehicle.getName() + " : " + vehicle.getPrice());
@@ -29,7 +29,7 @@ public class VehicleApp {
         }
     }
 
-
+    
     public static void main(String[] args) {
         Engine truckEngine = new Engine(2);
         Engine carEngine = new Engine(4);
@@ -40,11 +40,8 @@ public class VehicleApp {
         MotorBike motorBike = new MotorBike("Suzuki Bike", 5,75.00, bikeEngine, 50);
 
         Vehicle[] vehicles = {car, truck, motorBike};
-        //printVehicleNamesAndPrices(vehicles);
-
-        ArrayList<DriveAble> driveAbles = new ArrayList<DriveAble>();
+        ArrayList<DriveAble> driveAbles = new ArrayList<>();
         driveAbles.add(car); driveAbles.add(truck);
-
 
 
         //TEST
@@ -61,6 +58,5 @@ public class VehicleApp {
         System.out.println("======after tax======");
         truck.totalAfterTax(truck);
         sortAndPrintDriveableVehiclesBySpeed(driveAbles);
-
     }
 }

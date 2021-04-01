@@ -14,12 +14,7 @@ public class Car extends Vehicle implements DriveAble {
     @Override
     public void totalAfterTax(Vehicle vehicle) {
         double total =calcTax(vehicle) + (getPrice() * getQty());
-       // double total = ((getPrice() * getTAX()) * getQty());
         System.out.println(total);
     }
-        @Override
-        public String toString () {
-            return "Car{} " + super.toString();
 
-    }
 }

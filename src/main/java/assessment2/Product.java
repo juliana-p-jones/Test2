@@ -1,7 +1,7 @@
 package assessment2;
 
 public abstract class Product {
-
+    private String name;
 
     //constructor
     public Product(String name){
@@ -11,10 +11,4 @@ public abstract class Product {
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    private String name;
 }
