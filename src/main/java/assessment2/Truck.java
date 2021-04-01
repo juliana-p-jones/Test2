@@ -1,12 +1,11 @@
 package assessment2;
 
 public class Truck extends Vehicle implements DriveAble{
-//vars
-    Engine truckEngine;
 
+    //vars
     public final double TAX = .20;
 
-//constructor
+    //constructor
     public Truck(String name, int qty, double price, Engine truckEngine, int speed) {
         super(name, qty, price, truckEngine, speed);
     }
@@ -16,17 +15,13 @@ public class Truck extends Vehicle implements DriveAble{
         double total = calcTax(vehicle) + (getPrice() * getQty());
         System.out.println(total);
     }
-    public double calcTax(Vehicle vehicle){
-        return getPrice() * TAX;
-    }
 
     @Override
     public int milesPerHour() {
         return getSpeed();
     }
 
-    public double getTAX() {
-        return TAX;
-
+    public double calcTax(Vehicle vehicle){
+        return getPrice() * TAX;
     }
 }

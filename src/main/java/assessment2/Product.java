@@ -1,6 +1,7 @@
 package assessment2;
 
 public abstract class Product {
+    //var
     private String name;
 
     //constructor

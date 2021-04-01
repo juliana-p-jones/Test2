@@ -16,5 +16,4 @@ public class Car extends Vehicle implements DriveAble {
         double total =calcTax(vehicle) + (getPrice() * getQty());
         System.out.println(total);
     }
-
 }

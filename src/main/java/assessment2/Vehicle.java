@@ -1,6 +1,7 @@
 package assessment2;
 
 public abstract class Vehicle extends Product {
+    //vars
     private int qty;
     private double price;
     private Engine engine;
@@ -29,6 +30,7 @@ public abstract class Vehicle extends Product {
         return speed;
     }
 
+    //methods
     public void totalBeforeTax(Vehicle vehicle){
         System.out.println((vehicle.getPrice() * getQty()));
     }

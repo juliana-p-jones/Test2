@@ -8,7 +8,7 @@ public class VehicleApp {
     public static void printVehicleNamesAndPrices(Vehicle[] vehicles){
     for(Vehicle vehicle: vehicles){
         System.out.println(vehicle.getName() + " : " + vehicle.getPrice());
-     }
+        }
     }
 
     public static void getSpeedOfDriveableVehicles(ArrayList<DriveAble> driveables){
@@ -29,7 +29,7 @@ public class VehicleApp {
         }
     }
 
-
+    //Main
     public static void main(String[] args) {
         Engine truckEngine = new Engine(2);
         Engine carEngine = new Engine(4);
