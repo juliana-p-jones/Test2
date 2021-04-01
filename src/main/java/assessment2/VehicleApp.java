@@ -23,7 +23,7 @@ public class VehicleApp {
             System.out.println(vehicle.milesPerHour());
         }
         Collections.sort(unsortedDriveAbles, new SpeedComparator());
-        System.out.println("After sorting by price:");
+        System.out.println("After sorting by speed:");
         for (DriveAble vehicle : unsortedDriveAbles) {
             System.out.println(vehicle.milesPerHour());
         }
@@ -60,7 +60,7 @@ public class VehicleApp {
         truck.totalBeforeTax(truck);
         System.out.println("======after tax======");
         truck.totalAfterTax(truck);
-        getSpeedOfDriveableVehicles(driveAbles);
+        sortAndPrintDriveableVehiclesBySpeed(driveAbles);
 
     }
 }
