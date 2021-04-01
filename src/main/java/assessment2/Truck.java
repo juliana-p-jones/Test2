@@ -25,7 +25,6 @@ public class Truck extends Vehicle implements DriveAble{
         return getSpeed();
     }
 
-    @Override
     public double getTAX() {
         return TAX;
 

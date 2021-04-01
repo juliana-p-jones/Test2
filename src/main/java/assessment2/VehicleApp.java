@@ -29,7 +29,7 @@ public class VehicleApp {
         }
     }
 
-    
+
     public static void main(String[] args) {
         Engine truckEngine = new Engine(2);
         Engine carEngine = new Engine(4);
